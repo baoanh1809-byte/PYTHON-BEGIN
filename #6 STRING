@@ -1,0 +1,6 @@
+text = "X-DSPAM-Confidence:    0.8475"
+a = text.find(":")
+b = text[a + 1:] # give all char after ':'
+c = b.strip() # remove '      ' before number
+d = float(c)
+print(d)
